@@ -58,10 +58,10 @@ Your priority is life safety, building navigation, and situational awareness.
 Here is the LIVE real-time state of the building pulled directly from Cloud SQL:
 
 --- ACTIVE INCIDENTS ---
-${JSON.stringify(incidents.filter(i => i.status !== 'Resolved'), null, 2)}
+${JSON.stringify(incidents.filter((i: any) => i.status !== 'Resolved'), null, 2)}
 
 --- DEPLOYED TASKS ---
-${JSON.stringify(tasks.filter(t => t.status !== 'Resolved'), null, 2)}
+${JSON.stringify(tasks.filter((t: any) => t.status !== 'Resolved'), null, 2)}
 
 --- IOT SENSORS & DEVICES ---
 ${JSON.stringify(devices, null, 2)}
