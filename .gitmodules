@@ -1,0 +1,3 @@
+[submodule "EvacuAid-mobile-app"]
+	path = EvacuAid-mobile-app
+	url = https://github.com/Anish-ai/EvacuAid-app
